@@ -1,0 +1,28 @@
+#!/usr/bin/env zsh
+
+export XDG_CONFIG_HOME=$HOME/.config
+
+VIM="nvim"
+PERSONAL=$XDG_CONFIG_HOME/personal
+
+export STOW_FOLDERS="bin,nvim,tmux,personal,i3,zsh"
+export GOPATH=$HOME/go
+export GIT_EDITOR=$VIM
+export DOTFILES=$HOME/.dotfiles
+export EDITOR=$VIM
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export TERM=xterm-kitty
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH="$PATH:$1"
+    fi
+}
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH="$1:$PATH"
+    fi
+}
