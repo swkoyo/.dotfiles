@@ -164,3 +164,4 @@ shift + alt - q : yabai -m window --close
 
 # Applications
 cmd - return : /opt/homebrew/bin/kitty --single-instance -d ~
+cmd - b : open -a "Brave Browser" -n
