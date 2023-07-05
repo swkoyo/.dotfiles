@@ -5,7 +5,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
 PERSONAL=$XDG_CONFIG_HOME/personal
 
-export STOW_FOLDERS="bin,nvim,tmux,personal,i3,zsh"
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
 export DOTFILES=$HOME/.dotfiles
