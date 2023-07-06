@@ -48,6 +48,9 @@ bindsym $mod+Return exec kitty
 # start brave
 bindsym $mod+b exec brave
 
+# start nemo
+bindsym $mod+n exec nemo
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
