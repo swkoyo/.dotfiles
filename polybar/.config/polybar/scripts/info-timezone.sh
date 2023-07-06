@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Change format here. see `man date` for format controls.
-FORMAT="%I:%M %p | %a %D"
+FORMAT="%a %D %I:%M %p"
 
 # Add the timezones of your choice. see `timedatectl list-timezones`.
 set -- "Asia/Seoul" "America/Los_Angeles"
