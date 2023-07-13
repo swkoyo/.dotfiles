@@ -11,6 +11,7 @@ export DOTFILES=$HOME/.dotfiles
 export EDITOR=$VIM
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export TERM=xterm-kitty
+export N_PREFIX="$HOME/.local/n"
 
 bindkey -s ^f "tmux-sessionizer\n"
 

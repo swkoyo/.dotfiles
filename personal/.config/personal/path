@@ -6,5 +6,6 @@ addToPath $HOME/.cargo/bin
 addToPathFront $HOME/.local/.npm-global/bin
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/n/bin
 addToPathFront $HOME/go/bin
 addToPathFront $PNPM_HOME
