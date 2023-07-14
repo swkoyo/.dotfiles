@@ -12,6 +12,7 @@ export EDITOR=$VIM
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export TERM=xterm-kitty
 export N_PREFIX="$HOME/.local/n"
+export PYENV_ROOT="$HOME/.pyenv"
 
 bindkey -s ^f "tmux-sessionizer\n"
 

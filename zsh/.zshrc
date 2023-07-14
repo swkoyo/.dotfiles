@@ -103,3 +103,6 @@ source ~/.zsh_profile
 
 # StarShip
 eval "$(starship init zsh)"
+
+# Pyenv
+eval "$(pyenv init -)"
