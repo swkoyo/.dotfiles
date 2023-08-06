@@ -272,5 +272,3 @@ bindsym Print exec --no-startup-id flameshot gui
 # XScreenSaver
 exec --no-startup-id xscreensaver
 
-# Mullvad
-exec --no-startup-id mullvad-vpn
