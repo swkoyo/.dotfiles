@@ -4,6 +4,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 VIM="nvim"
 PERSONAL=$XDG_CONFIG_HOME/personal
+LOCALE="en_US.UTF-8"
 
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
@@ -13,6 +14,10 @@ export PNPM_HOME="$HOME/.local/share/pnpm"
 export TERM=xterm-kitty
 export N_PREFIX="$HOME/.local/n"
 export PYENV_ROOT="$HOME/.pyenv"
+export LANGUAGE=$LOCALE
+export LC_ALL=$LOCALE
+export LANG=$LOCALE
+export LC_TYPE=$LOCALE
 
 bindkey -s ^f "tmux-sessionizer\n"
 
