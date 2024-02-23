@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-languages=$(echo "golang nodejs javascript typescript tmux zsh lua rust python bash css html" | tr " " "\n")
+languages=$(echo "golang nodejs javascript typescript tmux zsh lua rust c python bash css html" | tr " " "\n")
 commands=$(echo "curl wget find man tldr sed awk tr cp ls grep xargs rg ps mv kill lsof less head tail tar cp rm rename jq cat ssh cargo git git-worktree git-status git-commit git-rebase docker stow chmod chown make" | tr " " "\n")
 
 selected=`echo "$languages\n$commands" | fzf`

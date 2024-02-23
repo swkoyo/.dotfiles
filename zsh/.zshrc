@@ -106,3 +106,6 @@ eval "$(starship init zsh)"
 
 # Pyenv
 eval "$(pyenv init -)"
+
+# Turso
+export PATH="/home/brandoki/.turso:$PATH"
