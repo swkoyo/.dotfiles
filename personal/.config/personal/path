@@ -3,10 +3,11 @@
 addToPath $GOPATH/bin
 addToPath $HOME/.yarn/bin
 addToPath $HOME/.cargo/bin
+addToPath $HOME/.turso
 addToPathFront $HOME/.local/.npm-global/bin
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.local/n/bin
 addToPathFront $HOME/go/bin
 addToPathFront $PNPM_HOME
-addToPathFront $HOME/.pyenv/bin
+addToPathFront $BUN_INSTALL/bin

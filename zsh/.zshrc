@@ -104,8 +104,5 @@ source ~/.zsh_profile
 # StarShip
 eval "$(starship init zsh)"
 
-# Pyenv
-eval "$(pyenv init -)"
-
-# Turso
-export PATH="/home/brandoki/.turso:$PATH"
+# bun completions
+[ -s "/Users/brandon/.bun/_bun" ] && source "/Users/brandon/.bun/_bun"

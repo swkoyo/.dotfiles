@@ -11,6 +11,7 @@ export GIT_EDITOR=$VIM
 export DOTFILES=$HOME/.dotfiles
 export EDITOR=$VIM
 export PNPM_HOME="$HOME/.local/share/pnpm"
+export BUN_INSTALL="$HOME/.bun"
 export TERM=xterm-kitty
 export N_PREFIX="$HOME/.local/n"
 export PYENV_ROOT="$HOME/.pyenv"
