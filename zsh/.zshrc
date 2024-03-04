@@ -104,5 +104,8 @@ source ~/.zsh_profile
 # StarShip
 eval "$(starship init zsh)"
 
+# Fuck
+eval $(thefuck --alias)
+
 # bun completions
 [ -s "/Users/brandon/.bun/_bun" ] && source "/Users/brandon/.bun/_bun"
