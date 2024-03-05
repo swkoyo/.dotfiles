@@ -105,7 +105,10 @@ source ~/.zsh_profile
 eval "$(starship init zsh)"
 
 # Fuck
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 # bun completions
 [ -s "/Users/brandon/.bun/_bun" ] && source "/Users/brandon/.bun/_bun"
