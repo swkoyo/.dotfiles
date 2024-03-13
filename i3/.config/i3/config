@@ -96,7 +96,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -227,6 +227,9 @@ exec_always --no-startup-id picom -bc
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 
+# Dunst
+exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+
 # Wallpaper
 exec --no-startup-id nitrogen --restore
 
@@ -266,9 +269,11 @@ client.background       $base07
 
 hide_edge_borders smart_no_gaps
 
-# FlameShot
-bindsym Print exec --no-startup-id flameshot gui
+# Screenshot -> Clipboard
+bindsym $mod+s exec maim -s | xclip -selection clipboard -t image/png
+
+# Screenshot -> Save -> Open with GIMP
+bindsym $mod+Shift+s exec IMG_PATH=$HOME/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png && maim -s $IMG_PATH && gimp $IMG_PATH
 
 # XScreenSaver
 exec --no-startup-id xscreensaver
-
