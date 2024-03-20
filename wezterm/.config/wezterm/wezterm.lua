@@ -11,7 +11,7 @@ config.window_background_opacity = 0.9
 
 config.hide_tab_bar_if_only_one_tab = true
 
-config.font_size = 11
+config.font_size = 12
 
 config.window_padding = {
 	left = 5,
@@ -20,8 +20,11 @@ config.window_padding = {
 	bottom = 2,
 }
 
-config.font = wezterm.font({
-	family = "Source Code Pro",
+config.font = wezterm.font_with_fallback({
+	"Iosevka Nerd Font Mono",
+	"Maple Mono NF",
+	"Fantasque Sans Mono",
+	"JetBrains Mono",
 })
 
 return config
