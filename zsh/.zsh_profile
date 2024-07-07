@@ -5,3 +5,4 @@ source $PERSONAL/env
 for i in `find -L $PERSONAL`; do
     source $i
 done
+

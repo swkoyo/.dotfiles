@@ -275,5 +275,11 @@ bindsym $mod+s exec maim -s | xclip -selection clipboard -t image/png
 # Screenshot -> Save -> Open with GIMP
 bindsym $mod+Shift+s exec IMG_PATH=$HOME/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png && maim -s $IMG_PATH && gimp $IMG_PATH
 
+# Mullvad split-tunnel firefox
+bindsym $mod+Shift+b exec mullvad-exclude firefox
+
+# Mullvad split-tunnel wezterm
+bindsym $mod+Shift+Return exec mullvad-exclude kitty
+
 # XScreenSaver
 exec --no-startup-id xscreensaver
