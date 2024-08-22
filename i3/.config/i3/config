@@ -49,7 +49,7 @@ bindsym $mod+Return exec wezterm
 bindsym $mod+b exec brave
 
 # start nemo
-bindsym $mod+n exec nemo
+bindsym $mod+n exec thunar
 
 # kill focused window
 bindsym $mod+Shift+q kill
