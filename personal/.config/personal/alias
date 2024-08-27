@@ -2,4 +2,6 @@
 
 alias work="cd ~/work"
 alias ls="lsd"
+alias cat="bat"
+alias lg="lazygit"
 alias maimcp="maim -s | xclip -selection clipboard -t image/png"

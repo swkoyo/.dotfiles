@@ -7,7 +7,7 @@ config.colors = {
 	background = "#121212",
 }
 
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.85
 
 config.hide_tab_bar_if_only_one_tab = true
 
@@ -21,16 +21,13 @@ config.window_padding = {
 }
 
 config.font = wezterm.font_with_fallback({
+	"Iosevka Term",
 	"Iosevka Nerd Font Mono",
 	"Maple Mono NF",
 	"Fantasque Sans Mono",
+	"Space Mono",
 	"JetBrains Mono",
+	"Noto Sans Mono",
 })
-
-if os.getenv("XDG_CURRENT_DESKTOP") == "Hyprland" then
-	config.enable_wayland = false
-else
-	config.enable_wayland = true
-end
 
 return config

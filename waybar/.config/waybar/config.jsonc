@@ -21,7 +21,8 @@
         "custom/notification"
     ],
     "hyprland/window": {
-        "format": "{}"
+        "format": "{}",
+        "icon": true
     },
     "hyprland/workspaces": {
         "sort-by-name": true,

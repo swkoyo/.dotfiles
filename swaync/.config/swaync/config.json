@@ -56,7 +56,7 @@
         },
         {
           "label": "󰌾",
-          "command": "swaylock-corrupter"
+          "command": "hyprlock"
         },
         {
           "label": "󰍃",
