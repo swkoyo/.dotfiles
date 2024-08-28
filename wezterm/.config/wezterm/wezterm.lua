@@ -11,7 +11,12 @@ config.window_background_opacity = 0.85
 
 config.hide_tab_bar_if_only_one_tab = true
 
-config.font_size = 12
+local is_macos = wezterm.target_triple:find("apple") ~= nil
+if is_macos then
+	config.font_size = 14
+else
+	config.font_size = 12
+end
 
 config.window_padding = {
 	left = 5,
