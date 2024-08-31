@@ -51,7 +51,7 @@
           "command": "systemctl reboot"
         },
         {
-          "label": "󰎁",
+          "label": "⏸",
           "command": "systemctl suspend"
         },
         {
