@@ -112,6 +112,3 @@ eval "$(zoxide init zsh)"
 
 # bun completions
 [ -s "/Users/brandon/.bun/_bun" ] && source "/Users/brandon/.bun/_bun"
-
-# Turso
-export PATH="/home/brandoki/.turso:$PATH"
