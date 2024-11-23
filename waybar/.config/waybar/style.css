@@ -74,7 +74,7 @@ tooltip {
 #pulseaudio.microphone,
 #network,
 #bluetooth,
-#custom-notifications,
+#custom-notification,
 #custom-updates,
 #custom-player,
 #workspaces,
@@ -82,6 +82,7 @@ tooltip {
 #memory,
 #disk,
 #backlight,
+#idle_inhibitor,
 
 #backlight {
     background: #000000;
@@ -119,6 +120,14 @@ tooltip {
     margin-left: 3px;
 }
 
+#idle_inhibitor {
+    color: #a6e3a1;
+    padding-left: 9px;
+    padding-right: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 #network {
     color: #f9e2af;
     border-radius: 7px 7px 7px 7px;
@@ -129,10 +138,9 @@ tooltip {
     color: #f9e2af;
     border-radius: 7px 7px 7px 7px;
     padding-left: 9px;
-    padding-right: 15px;
+    padding-right: 9px;
     margin-left:  2px;
     margin-right: 2px;
-
 }
 
 #custom-updates {

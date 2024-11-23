@@ -15,6 +15,7 @@
     ],
     "modules-right": [
         "tray",
+        "idle_inhibitor",
         "custom/player",
         "pulseaudio",
         "pulseaudio#microphone",
@@ -140,5 +141,12 @@
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
     }
 }
