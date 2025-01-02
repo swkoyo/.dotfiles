@@ -1,0 +1,9 @@
+font-family = "Iosevka Term Extended"
+window-decoration = false
+theme = GruvboxDark
+font-size = 12
+background-opacity = 0.75
+background-blur-radius = 20
+background = "#121212"
+window-padding-x = 5
+window-padding-y = 2

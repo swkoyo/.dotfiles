@@ -26,12 +26,12 @@ config.window_padding = {
 }
 
 config.font = wezterm.font_with_fallback({
+	"Maple Mono NF",
+	"Space Mono",
 	"Iosevka Term",
 	"Iosevka Term Extended",
 	"Iosevka Nerd Font Mono",
-	"Maple Mono NF",
 	"Fantasque Sans Mono",
-	"Space Mono",
 	"JetBrains Mono",
 	"Noto Sans Mono",
 })
