@@ -18,6 +18,7 @@ export LANGUAGE=$LOCALE
 export LC_ALL=$LOCALE
 export LANG=$LOCALE
 export LC_TYPE=$LOCALE
+export PYENV_ROOT=$HOME/.pyenv
 
 bindkey -s ^f "tmux-sessionizer\n"
 
