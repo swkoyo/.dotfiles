@@ -112,3 +112,13 @@ eval "$(zoxide init zsh)"
 
 # bun completions
 [ -s "/Users/brandon/.bun/_bun" ] && source "/Users/brandon/.bun/_bun"
+
+export FURY_AUTH=1B2lLV-FuQlmwoExvotehgzxAxWJcTlg
+export FURY_PUSH_AUTH=26cYwa-9DiY9WDVtV9qB6famEZQNRxcQ
+export PYENV_ROOT=“/Users/brandonkim/.pyenv”
+export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+PATH=$(pyenv root)/shims:$PATH
+
