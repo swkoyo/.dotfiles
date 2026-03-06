@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ "$PWD" != "$HOME/work"* ]]; then
+  echo "Not in ~/work directory"
+  exit 1
+fi
+
+repo=$(basename "$(git rev-parse --show-toplevel)")
+open -a "Google Chrome" "https://github.com/EveryoneSocial/$repo"

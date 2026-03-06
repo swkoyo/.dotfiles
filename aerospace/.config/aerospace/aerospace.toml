@@ -7,18 +7,19 @@ enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 
 after-startup-command = [
-  "exec-and-forget sketchybar",
+  # "exec-and-forget sketchybar",
+
   # JankyBorders has a built-in detection of already running process,
   # so it won't be run twice on AeroSpace restart
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0',
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0x33ccffee width=5.0',
 ]
 
 # Notify Sketchybar about workspace change
-exec-on-workspace-change = [
-  '/bin/bash',
-  '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE',
-]
+# exec-on-workspace-change = [
+#   '/bin/bash',
+#   '-c',
+#   'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE',
+# ]
 
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
@@ -100,7 +101,7 @@ inner.horizontal = 10
 inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
-outer.top = 37
+outer.top = 10
 outer.right = 10
 
 [mode.resize.binding]
@@ -122,3 +123,9 @@ alt-shift-l = ['join-with right', 'mode main']
 if.app-id = 'app.zen-browser.zen'
 if.window-title-regex-substring = 'Picture-in-Picture'
 run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id="com.mitchellh.ghostty"
+run= [
+  "layout floating",
+]
