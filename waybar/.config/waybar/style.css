@@ -38,11 +38,14 @@ tooltip {
     padding-bottom: 5px;
 }
 
+/* Core fixes for individual buttons */
 #workspaces button {
     color: #313244;
-    margin-right: 5px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin: 0 2px;              /* Reduce from 5px → smaller gaps BETWEEN buttons; try 1px or 0px */
+    padding: 0px 4px;           /* Tiny horizontal padding for breathing room; was 0 → try 2-6px */
+    min-width: 0;               /* Prevents forced wide buttons when few/no icons */
+    min-height: 0;              /* Safety for vertical */
+    font-size: 13px;            /* Match your global */
 }
 
 #workspaces button.active {
@@ -65,6 +68,29 @@ tooltip {
     background: #11111b;
     color: #cdd6f4;
     border-radius: 7px;
+}
+
+/* Target the actual content (workspace ID + window icons) */
+#workspaces button label {
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.5px;     /* Tightens gaps between ID and icons / between icons; try -1px or -0.8px if still gappy */
+}
+
+/* Optional: even tighter if icons feel too separated */
+#workspaces button * {          /* Wildcard for all inner elements */
+    margin: 0;
+    padding: 0;
+}
+
+/* Keep your states, but ensure they don't add extra space */
+#workspaces button.active,
+#workspaces button.focused,
+#workspaces button.urgent,
+#workspaces button:hover {
+    padding: 0px 4px;           /* Match base padding */
+    margin: 0 2px;              /* Consistent spacing */
+    border-radius: 7px;         /* Your style */
 }
 
 #window,
@@ -104,7 +130,8 @@ tooltip {
     background: #000000;
     border-radius: 7px;
     margin-left: 5px;
-    padding-right: 0px;
+    padding: 0px;               /* Remove any inner padding on the group */
+    margin-right: 0px;          /* Optional: reduce if too much space to next module */
 }
 
 #window {

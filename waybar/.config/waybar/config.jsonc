@@ -27,15 +27,24 @@
     },
     "hyprland/workspaces": {
         "sort-by-name": true,
-        "format": "{id}",
+        "format": "{id} {windows}",
+        "format-window-separator": " ",
         "show-special": true,
         "persistent-workspaces": {
             "*": 0
+        },
+        "window-rewrite-default": "",
+        "window-rewrite": {
+            "class<brave-browser>": "",
+            "class<com.mitchellh.ghostty>": "",
+            "class<steam>": "",
+            "class<steam_app_[0-9]+>": "",
+            "class<thunderbird>": ""
         }
     },
     "tray": {
-        "icon-size": 12,
-        "spacing": 2
+        "icon-size": 20,
+        "spacing": 8
     },
     "clock": {
         "interval": 60,
