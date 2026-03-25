@@ -12,6 +12,8 @@ This is a cross-platform dotfiles repository managed with **GNU Stow**, targetin
 - `ghostty/.config/ghostty/config` → `~/.config/ghostty/config`
 - `bin/.local/scripts/tmux-sessionizer` → `~/.local/scripts/tmux-sessionizer`
 
+Stow is active — editing files in this repo **directly modifies** the live config via symlinks. Changes take effect immediately (or after restarting the relevant tool).
+
 ### Install Scripts
 
 - `./install` — Generic installer; takes `STOW_FOLDERS` env var (comma-separated list of directories to stow)
@@ -42,6 +44,16 @@ Config lives in `nvim/.config/nvim/` as a **git submodule** pointing to `git@git
 ```sh
 git submodule update --remote nvim/.config/nvim
 ```
+
+**LSP setup:**
+- Uses **mason.nvim**, **mason-lspconfig.nvim** (v2), and **nvim-lspconfig**
+- Mason-lspconfig v2 uses `vim.lsp.config()` + `automatic_enable = true` (the old `handlers` API was removed in v2)
+- LSP keymaps (`gd`, `gr`, etc.) use built-in `vim.lsp.buf` functions (not Telescope, to avoid Neovim 0.11 deprecation warnings)
+- Diagnostic signs use `vim.diagnostic.config()` with `signs.text` table (not the deprecated `sign_define()`)
+- Python: **basedpyright** (type checking) + **ruff** (linting/formatting)
+- Config file: `nvim/.config/nvim/lua/plugins/lsp/lspconfig.lua`
+
+**Important:** When updating Neovim plugins, watch for breaking API changes in mason-lspconfig and Neovim's built-in LSP APIs. Neovim 0.11 deprecated many `vim.lsp.util` functions.
 
 ### Personal Settings
 Shared shell settings live in `personal/.config/personal/`:
